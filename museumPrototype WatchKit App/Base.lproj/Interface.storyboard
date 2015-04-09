@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Museum-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Museum" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="museumPrototype_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button alignment="left" id="big-Vu-mys">
+                            <group key="contentGroup" width="1" height="55" alignment="left" backgroundImage="monalisa" contentMode="scaleAspectFill" id="to8-BZ-30X">
+                                <items>
+                                    <label alignment="right" verticalAlignment="bottom" text="Mona Lisa" id="Zfh-18-Xrg"/>
+                                </items>
+                            </group>
+                            <connections>
+                                <action selector="test" destination="AgC-eL-Hgc" id="MCg-rZ-bUx"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="aXb-98-ZEb">
+                            <group key="contentGroup" width="1" height="55" alignment="left" backgroundImage="whistlersmother" contentMode="scaleAspectFill" id="BAN-fJ-cg1">
+                                <items>
+                                    <label alignment="right" verticalAlignment="bottom" text="Whistler's Mother" id="s6h-Rh-OD2"/>
+                                </items>
+                            </group>
+                            <connections>
+                                <action selector="test" destination="AgC-eL-Hgc" id="Izj-we-K29"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="testBtn" destination="big-Vu-mys" id="AGF-4W-hvA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="74" y="264"/>
+        </scene>
+        <!--Guide-->
+        <scene sceneID="cHp-Ub-k3d">
+            <objects>
+                <controller identifier="Guide" contentMode="scaleAspectFit" id="TPk-zB-J9H" customClass="GuideInterfaceController" customModule="museumPrototype_WatchKit_Extension">
+                    <items>
+                        <button alignment="left" id="muP-VR-oPt">
+                            <group key="contentGroup" width="1" alignment="left" layout="vertical" spacing="0.0" id="3KY-Kn-xWR">
+                                <items>
+                                    <group width="1" height="60" alignment="left" backgroundImage="monalisa" contentMode="scaleAspectFill" id="0Ip-Qm-6Jz"/>
+                                    <group width="1" alignment="left" id="lye-5w-YLA">
+                                        <items>
+                                            <imageView width="31" height="20" alignment="center" image="play" contentMode="center" id="GsJ-mR-isy"/>
+                                            <label alignment="center" text="Audio Guide" textAlignment="right" id="HTg-4P-lH7">
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                </items>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </group>
+                            <connections>
+                                <action selector="audioGuidePressed" destination="TPk-zB-J9H" id="yCq-am-fNz"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="qh9-c7-1rq">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" radius="0.0" spacing="0.0" id="1SD-dW-r3N">
+                                    <items>
+                                        <label alignment="left" text="Painting's name" textAlignment="left" numberOfLines="0" id="iK8-Og-TFg">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <label alignment="left" text="1900-1900" id="wVo-FG-6s1">
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                        <label alignment="left" text="By: Painter's name" numberOfLines="0" minimumScaleFactor="0.70000000000000007" id="Ghy-m2-wnY">
+                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <variation key="default">
+                                        <mask key="items">
+                                            <exclude reference="iK8-Og-TFg"/>
+                                            <exclude reference="wVo-FG-6s1"/>
+                                            <exclude reference="Ghy-m2-wnY"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="device=watch38mm">
+                                        <mask key="items">
+                                            <include reference="iK8-Og-TFg"/>
+                                            <include reference="wVo-FG-6s1"/>
+                                            <include reference="Ghy-m2-wnY"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                                <label alignment="left" numberOfLines="0" minimumScaleFactor="0.70000000000000007" id="asA-Ws-Yfz">
+                                    <string key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</string>
+                                </label>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="1SD-dW-r3N"/>
+                                    <exclude reference="asA-Ws-Yfz"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch38mm">
+                                <mask key="items">
+                                    <include reference="1SD-dW-r3N"/>
+                                    <include reference="asA-Ws-Yfz"/>
+                                </mask>
+                            </variation>
+                        </group>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="qh9-c7-1rq"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch38mm">
+                        <mask key="items">
+                            <include reference="qh9-c7-1rq"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="playPauseIndicatorImage" destination="GsJ-mR-isy" id="83n-uH-OiA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="452" y="351"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="museumPrototype_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" wantsSashBlur="YES" id="JfB-70-Muf">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller contentMode="scaleAspectFill" id="gdX-wl-uQE" customClass="NotificationController" customModule="museumPrototype_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="100" alignment="left" contentMode="scaleAspectFill" layout="vertical" radius="0.0" id="ehB-vE-x65">
+                            <items>
+                                <label width="1" alignment="center" verticalAlignment="bottom" text="Label" textAlignment="center" minimumScaleFactor="0.50000000000000011" id="ESH-Zq-4XX"/>
+                            </items>
+                            <variation key="device=watch38mm" height="82"/>
+                            <variation key="device=watch42mm" height="99"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="group" destination="ehB-vE-x65" id="F4M-Li-kx3"/>
+                        <outlet property="titleLabel" destination="ESH-Zq-4XX" id="cEw-Nr-WYX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+</document>

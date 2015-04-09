@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B25273231AD550A30071F3F4 /* hero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B25273221AD550A30071F3F4 /* hero.mp3 */; };
+		B25273241AD550A30071F3F4 /* hero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B25273221AD550A30071F3F4 /* hero.mp3 */; };
+		B25273251AD550A30071F3F4 /* hero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B25273221AD550A30071F3F4 /* hero.mp3 */; };
+		B25F2CB41AD69478002731A7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F2CB31AD69478002731A7 /* SwiftyJSON.swift */; };
+		B25F2CB51AD69478002731A7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F2CB31AD69478002731A7 /* SwiftyJSON.swift */; };
+		B25F2CB71AD6A4AF002731A7 /* GuideInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F2CB61AD6A4AF002731A7 /* GuideInterfaceController.swift */; };
+		B298FF7C1AD6B887008F58DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DD33321AD5257A002D87E0 /* Images.xcassets */; };
 		B2DD33041AD52546002D87E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DD33031AD52546002D87E0 /* AppDelegate.swift */; };
 		B2DD33061AD52546002D87E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DD33051AD52546002D87E0 /* ViewController.swift */; };
 		B2DD33091AD52546002D87E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DD33071AD52546002D87E0 /* Main.storyboard */; };
 		B2DD330B1AD52546002D87E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DD330A1AD52546002D87E0 /* Images.xcassets */; };
 		B2DD330E1AD52546002D87E0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DD330C1AD52546002D87E0 /* LaunchScreen.xib */; };
 		B2DD331A1AD52546002D87E0 /* museumPrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DD33191AD52546002D87E0 /* museumPrototypeTests.swift */; };
+		B2DD332D1AD5257A002D87E0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DD332C1AD5257A002D87E0 /* InterfaceController.swift */; };
+		B2DD332F1AD5257A002D87E0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DD332E1AD5257A002D87E0 /* NotificationController.swift */; };
+		B2DD33311AD5257A002D87E0 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DD33301AD5257A002D87E0 /* GlanceController.swift */; };
+		B2DD33331AD5257A002D87E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DD33321AD5257A002D87E0 /* Images.xcassets */; };
+		B2DD33371AD5257B002D87E0 /* museumPrototype WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = B2DD33361AD5257A002D87E0 /* museumPrototype WatchKit App.app */; };
+		B2DD333F1AD5257B002D87E0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DD333D1AD5257B002D87E0 /* Interface.storyboard */; };
+		B2DD33411AD5257B002D87E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DD33401AD5257B002D87E0 /* Images.xcassets */; };
+		B2DD33441AD5257B002D87E0 /* museumPrototype WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2DD33271AD5257A002D87E0 /* museumPrototype WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,9 +38,41 @@
 			remoteGlobalIDString = B2DD32FD1AD52546002D87E0;
 			remoteInfo = museumPrototype;
 		};
+		B2DD33381AD5257B002D87E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2DD32F61AD52546002D87E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2DD33351AD5257A002D87E0;
+			remoteInfo = "museumPrototype WatchKit App";
+		};
+		B2DD33421AD5257B002D87E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2DD32F61AD52546002D87E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2DD33261AD5257A002D87E0;
+			remoteInfo = "museumPrototype WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B2DD334B1AD5257B002D87E0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B2DD33441AD5257B002D87E0 /* museumPrototype WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B25273221AD550A30071F3F4 /* hero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hero.mp3; path = "museumPrototype WatchKit Extension/hero.mp3"; sourceTree = SOURCE_ROOT; };
+		B25F2CB21AD69478002731A7 /* museumPrototype WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "museumPrototype WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		B25F2CB31AD69478002731A7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		B25F2CB61AD6A4AF002731A7 /* GuideInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideInterfaceController.swift; sourceTree = "<group>"; };
 		B2DD32FE1AD52546002D87E0 /* museumPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = museumPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DD33021AD52546002D87E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2DD33031AD52546002D87E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +83,17 @@
 		B2DD33131AD52546002D87E0 /* museumPrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = museumPrototypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DD33181AD52546002D87E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2DD33191AD52546002D87E0 /* museumPrototypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = museumPrototypeTests.swift; sourceTree = "<group>"; };
+		B2DD33271AD5257A002D87E0 /* museumPrototype WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "museumPrototype WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DD332A1AD5257A002D87E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DD332B1AD5257A002D87E0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B2DD332C1AD5257A002D87E0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B2DD332E1AD5257A002D87E0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B2DD33301AD5257A002D87E0 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		B2DD33321AD5257A002D87E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B2DD33361AD5257A002D87E0 /* museumPrototype WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "museumPrototype WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DD333C1AD5257B002D87E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DD333E1AD5257B002D87E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B2DD33401AD5257B002D87E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +111,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2DD33241AD5257A002D87E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +126,8 @@
 			children = (
 				B2DD33001AD52546002D87E0 /* museumPrototype */,
 				B2DD33161AD52546002D87E0 /* museumPrototypeTests */,
+				B2DD33281AD5257A002D87E0 /* museumPrototype WatchKit Extension */,
+				B2DD333A1AD5257B002D87E0 /* museumPrototype WatchKit App */,
 				B2DD32FF1AD52546002D87E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +137,8 @@
 			children = (
 				B2DD32FE1AD52546002D87E0 /* museumPrototype.app */,
 				B2DD33131AD52546002D87E0 /* museumPrototypeTests.xctest */,
+				B2DD33271AD5257A002D87E0 /* museumPrototype WatchKit Extension.appex */,
+				B2DD33361AD5257A002D87E0 /* museumPrototype WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,12 +146,15 @@
 		B2DD33001AD52546002D87E0 /* museumPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				B25F2CB31AD69478002731A7 /* SwiftyJSON.swift */,
+				B25273221AD550A30071F3F4 /* hero.mp3 */,
 				B2DD33031AD52546002D87E0 /* AppDelegate.swift */,
 				B2DD33051AD52546002D87E0 /* ViewController.swift */,
 				B2DD33071AD52546002D87E0 /* Main.storyboard */,
 				B2DD330A1AD52546002D87E0 /* Images.xcassets */,
 				B2DD330C1AD52546002D87E0 /* LaunchScreen.xib */,
 				B2DD33011AD52546002D87E0 /* Supporting Files */,
+				B25F2CB21AD69478002731A7 /* museumPrototype WatchKit App-Bridging-Header.h */,
 			);
 			path = museumPrototype;
 			sourceTree = "<group>";
@@ -112,6 +184,46 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B2DD33281AD5257A002D87E0 /* museumPrototype WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B2DD332C1AD5257A002D87E0 /* InterfaceController.swift */,
+				B2DD332E1AD5257A002D87E0 /* NotificationController.swift */,
+				B25F2CB61AD6A4AF002731A7 /* GuideInterfaceController.swift */,
+				B2DD33301AD5257A002D87E0 /* GlanceController.swift */,
+				B2DD33321AD5257A002D87E0 /* Images.xcassets */,
+				B2DD33291AD5257A002D87E0 /* Supporting Files */,
+			);
+			path = "museumPrototype WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B2DD33291AD5257A002D87E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2DD332A1AD5257A002D87E0 /* Info.plist */,
+				B2DD332B1AD5257A002D87E0 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2DD333A1AD5257B002D87E0 /* museumPrototype WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B2DD333D1AD5257B002D87E0 /* Interface.storyboard */,
+				B2DD33401AD5257B002D87E0 /* Images.xcassets */,
+				B2DD333B1AD5257B002D87E0 /* Supporting Files */,
+			);
+			path = "museumPrototype WatchKit App";
+			sourceTree = "<group>";
+		};
+		B2DD333B1AD5257B002D87E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2DD333C1AD5257B002D87E0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +234,12 @@
 				B2DD32FA1AD52546002D87E0 /* Sources */,
 				B2DD32FB1AD52546002D87E0 /* Frameworks */,
 				B2DD32FC1AD52546002D87E0 /* Resources */,
+				B2DD334B1AD5257B002D87E0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B2DD33431AD5257B002D87E0 /* PBXTargetDependency */,
 			);
 			name = museumPrototype;
 			productName = museumPrototype;
@@ -150,6 +264,39 @@
 			productReference = B2DD33131AD52546002D87E0 /* museumPrototypeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B2DD33261AD5257A002D87E0 /* museumPrototype WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DD33481AD5257B002D87E0 /* Build configuration list for PBXNativeTarget "museumPrototype WatchKit Extension" */;
+			buildPhases = (
+				B2DD33231AD5257A002D87E0 /* Sources */,
+				B2DD33241AD5257A002D87E0 /* Frameworks */,
+				B2DD33251AD5257A002D87E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2DD33391AD5257B002D87E0 /* PBXTargetDependency */,
+			);
+			name = "museumPrototype WatchKit Extension";
+			productName = "museumPrototype WatchKit Extension";
+			productReference = B2DD33271AD5257A002D87E0 /* museumPrototype WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		B2DD33351AD5257A002D87E0 /* museumPrototype WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DD33451AD5257B002D87E0 /* Build configuration list for PBXNativeTarget "museumPrototype WatchKit App" */;
+			buildPhases = (
+				B2DD33341AD5257A002D87E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "museumPrototype WatchKit App";
+			productName = "museumPrototype WatchKit App";
+			productReference = B2DD33361AD5257A002D87E0 /* museumPrototype WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +312,12 @@
 					B2DD33121AD52546002D87E0 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = B2DD32FD1AD52546002D87E0;
+					};
+					B2DD33261AD5257A002D87E0 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					B2DD33351AD5257A002D87E0 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -183,6 +336,8 @@
 			targets = (
 				B2DD32FD1AD52546002D87E0 /* museumPrototype */,
 				B2DD33121AD52546002D87E0 /* museumPrototypeTests */,
+				B2DD33261AD5257A002D87E0 /* museumPrototype WatchKit Extension */,
+				B2DD33351AD5257A002D87E0 /* museumPrototype WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2DD33091AD52546002D87E0 /* Main.storyboard in Resources */,
+				B25273231AD550A30071F3F4 /* hero.mp3 in Resources */,
 				B2DD330E1AD52546002D87E0 /* LaunchScreen.xib in Resources */,
 				B2DD330B1AD52546002D87E0 /* Images.xcassets in Resources */,
 			);
@@ -205,6 +361,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2DD33251AD5257A002D87E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DD33371AD5257B002D87E0 /* museumPrototype WatchKit App.app in Resources */,
+				B25273241AD550A30071F3F4 /* hero.mp3 in Resources */,
+				B2DD33331AD5257A002D87E0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DD33341AD5257A002D87E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DD333F1AD5257B002D87E0 /* Interface.storyboard in Resources */,
+				B298FF7C1AD6B887008F58DC /* Images.xcassets in Resources */,
+				B2DD33411AD5257B002D87E0 /* Images.xcassets in Resources */,
+				B25273251AD550A30071F3F4 /* hero.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25F2CB41AD69478002731A7 /* SwiftyJSON.swift in Sources */,
 				B2DD33061AD52546002D87E0 /* ViewController.swift in Sources */,
 				B2DD33041AD52546002D87E0 /* AppDelegate.swift in Sources */,
 			);
@@ -225,6 +403,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2DD33231AD5257A002D87E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25F2CB71AD6A4AF002731A7 /* GuideInterfaceController.swift in Sources */,
+				B2DD332F1AD5257A002D87E0 /* NotificationController.swift in Sources */,
+				B2DD332D1AD5257A002D87E0 /* InterfaceController.swift in Sources */,
+				B2DD33311AD5257A002D87E0 /* GlanceController.swift in Sources */,
+				B25F2CB51AD69478002731A7 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +422,16 @@
 			isa = PBXTargetDependency;
 			target = B2DD32FD1AD52546002D87E0 /* museumPrototype */;
 			targetProxy = B2DD33141AD52546002D87E0 /* PBXContainerItemProxy */;
+		};
+		B2DD33391AD5257B002D87E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2DD33351AD5257A002D87E0 /* museumPrototype WatchKit App */;
+			targetProxy = B2DD33381AD5257B002D87E0 /* PBXContainerItemProxy */;
+		};
+		B2DD33431AD5257B002D87E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2DD33261AD5257A002D87E0 /* museumPrototype WatchKit Extension */;
+			targetProxy = B2DD33421AD5257B002D87E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +450,14 @@
 				B2DD330D1AD52546002D87E0 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		B2DD333D1AD5257B002D87E0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2DD333E1AD5257B002D87E0 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = museumPrototype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = museumPrototype/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,6 +596,67 @@
 			};
 			name = Release;
 		};
+		B2DD33461AD5257B002D87E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = museumPrototype_WatchKit_Extension;
+				INFOPLIST_FILE = "museumPrototype WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "museumPrototype/museumPrototype WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		B2DD33471AD5257B002D87E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				IBSC_MODULE = museumPrototype_WatchKit_Extension;
+				INFOPLIST_FILE = "museumPrototype WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "museumPrototype/museumPrototype WatchKit App-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		B2DD33491AD5257B002D87E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "museumPrototype WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B2DD334A1AD5257B002D87E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "museumPrototype WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +676,7 @@
 				B2DD331F1AD52546002D87E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2DD33201AD52546002D87E0 /* Build configuration list for PBXNativeTarget "museumPrototypeTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +685,25 @@
 				B2DD33221AD52546002D87E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2DD33451AD5257B002D87E0 /* Build configuration list for PBXNativeTarget "museumPrototype WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DD33461AD5257B002D87E0 /* Debug */,
+				B2DD33471AD5257B002D87E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2DD33481AD5257B002D87E0 /* Build configuration list for PBXNativeTarget "museumPrototype WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DD33491AD5257B002D87E0 /* Debug */,
+				B2DD334A1AD5257B002D87E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

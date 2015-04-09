@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var audioPlayer: AVAudioPlayer = AVAudioPlayer()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        //self.initAndPlaySong()
+      
         return true
     }
 
@@ -41,6 +45,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+        let info = JSON(userInfo!)
+        if let mode = info["mode"].string  {
+            if(mode == "play"){
+                self.audioPlayer.play()
+                reply(["reply":"play"])
+            }else if(mode == "stop"){
+                self.audioPlayer.stop()
+                reply(["reply":"stop"])
+            }else if(mode == "pause"){
+                self.audioPlayer.pause()
+                reply(["reply":"pause"])
+            }else if(mode == "initSong"){
+                self.initSong() //with arg!
+                reply(["reply":"init"])
+            }
+        }
+    }
 
+    func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]!) -> Void) -> Bool {
+        return true
+    }
+    
+    func initSong(){
+        //Enables Background playback
+        var audioSession = AVAudioSession.sharedInstance()
+        audioSession.setCategory(AVAudioSessionCategoryPlayback, error: nil)
+        audioSession.setActive(true, error: nil)
+        
+        var soundFilePath = NSBundle.mainBundle().pathForResource("hero", ofType: "mp3")
+        var fileURL = NSURL(string: soundFilePath!)
+        self.audioPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+        self.audioPlayer.numberOfLoops = 1
+        
+    }
 }
 
