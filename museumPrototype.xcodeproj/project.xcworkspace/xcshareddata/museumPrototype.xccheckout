@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DC00F400-6971-4D38-ACA0-1D8F8053F218</string>
+	<key>IDESourceControlProjectName</key>
+	<string>museumPrototype</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BA081249B4875B8127C3206CDBF612AAF9983D11</key>
+		<string>https://github.com/aborren/museumPrototype.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>museumPrototype.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BA081249B4875B8127C3206CDBF612AAF9983D11</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/aborren/museumPrototype.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BA081249B4875B8127C3206CDBF612AAF9983D11</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BA081249B4875B8127C3206CDBF612AAF9983D11</string>
+			<key>IDESourceControlWCCName</key>
+			<string>museumPrototype</string>
+		</dict>
+	</array>
+</dict>
+</plist>

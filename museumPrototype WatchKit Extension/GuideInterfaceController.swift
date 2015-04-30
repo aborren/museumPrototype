@@ -12,16 +12,31 @@ import Foundation
 
 class GuideInterfaceController: WKInterfaceController {
 
+    var art: ArtObject!
     var isPlaying = false
     var hasInitiatedSong = false
     
+    @IBOutlet var backgroundArtGroup: WKInterfaceGroup!
     @IBOutlet var playPauseIndicatorImage: WKInterfaceImage!
+    
+    @IBOutlet var artTitle: WKInterfaceLabel!
+    @IBOutlet var createdLabel: WKInterfaceLabel!
+    @IBOutlet var creatorLabel: WKInterfaceLabel!
+    @IBOutlet var informationLabel: WKInterfaceLabel!
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         // Configure interface objects here.
+        let dict = context as! NSDictionary
+        self.art = dict["art"] as! ArtObject
         
-        if(context != nil){
+        self.backgroundArtGroup.setBackgroundImageNamed(self.art.imageName)
+        self.artTitle.setText(self.art.title)
+        self.createdLabel.setText(self.art.created)
+        self.creatorLabel.setText(self.art.creator)
+        self.informationLabel.setText(self.art.information)
+        
+        if(dict["play"] as! Bool){
             self.play()
         }
     }

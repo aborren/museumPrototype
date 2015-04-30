@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B25273231AD550A30071F3F4 /* hero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B25273221AD550A30071F3F4 /* hero.mp3 */; };
-		B25273241AD550A30071F3F4 /* hero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B25273221AD550A30071F3F4 /* hero.mp3 */; };
-		B25273251AD550A30071F3F4 /* hero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B25273221AD550A30071F3F4 /* hero.mp3 */; };
+		B256CD581ADBB615005A56D9 /* ArtObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B256CD571ADBB615005A56D9 /* ArtObject.swift */; };
+		B256CD591ADBB743005A56D9 /* ArtObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B256CD571ADBB615005A56D9 /* ArtObject.swift */; };
+		B256CD5B1ADBBAEB005A56D9 /* ArtRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B256CD5A1ADBBAEB005A56D9 /* ArtRow.swift */; };
 		B25F2CB41AD69478002731A7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F2CB31AD69478002731A7 /* SwiftyJSON.swift */; };
 		B25F2CB51AD69478002731A7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F2CB31AD69478002731A7 /* SwiftyJSON.swift */; };
 		B25F2CB71AD6A4AF002731A7 /* GuideInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F2CB61AD6A4AF002731A7 /* GuideInterfaceController.swift */; };
+		B261C0731ADBF794008173D7 /* mona.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B261C0721ADBF794008173D7 /* mona.mp3 */; };
 		B298FF7C1AD6B887008F58DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DD33321AD5257A002D87E0 /* Images.xcassets */; };
 		B2DD33041AD52546002D87E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DD33031AD52546002D87E0 /* AppDelegate.swift */; };
 		B2DD33061AD52546002D87E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DD33051AD52546002D87E0 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		B2DD333F1AD5257B002D87E0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DD333D1AD5257B002D87E0 /* Interface.storyboard */; };
 		B2DD33411AD5257B002D87E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DD33401AD5257B002D87E0 /* Images.xcassets */; };
 		B2DD33441AD5257B002D87E0 /* museumPrototype WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2DD33271AD5257A002D87E0 /* museumPrototype WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B2E802CB1AF27579003A46C5 /* hero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B2E802CA1AF27579003A46C5 /* hero.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,10 +71,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B25273221AD550A30071F3F4 /* hero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hero.mp3; path = "museumPrototype WatchKit Extension/hero.mp3"; sourceTree = SOURCE_ROOT; };
+		B256CD571ADBB615005A56D9 /* ArtObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtObject.swift; sourceTree = "<group>"; };
+		B256CD5A1ADBBAEB005A56D9 /* ArtRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtRow.swift; sourceTree = "<group>"; };
 		B25F2CB21AD69478002731A7 /* museumPrototype WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "museumPrototype WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
 		B25F2CB31AD69478002731A7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		B25F2CB61AD6A4AF002731A7 /* GuideInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideInterfaceController.swift; sourceTree = "<group>"; };
+		B261C0721ADBF794008173D7 /* mona.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mona.mp3; path = museumPrototype/mona.mp3; sourceTree = SOURCE_ROOT; };
 		B2DD32FE1AD52546002D87E0 /* museumPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = museumPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DD33021AD52546002D87E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2DD33031AD52546002D87E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 		B2DD333C1AD5257B002D87E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2DD333E1AD5257B002D87E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		B2DD33401AD5257B002D87E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B2E802CA1AF27579003A46C5 /* hero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hero.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				B25F2CB31AD69478002731A7 /* SwiftyJSON.swift */,
-				B25273221AD550A30071F3F4 /* hero.mp3 */,
+				B261C0721ADBF794008173D7 /* mona.mp3 */,
+				B2E802CA1AF27579003A46C5 /* hero.mp3 */,
+				B256CD571ADBB615005A56D9 /* ArtObject.swift */,
 				B2DD33031AD52546002D87E0 /* AppDelegate.swift */,
 				B2DD33051AD52546002D87E0 /* ViewController.swift */,
 				B2DD33071AD52546002D87E0 /* Main.storyboard */,
@@ -188,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				B2DD332C1AD5257A002D87E0 /* InterfaceController.swift */,
+				B256CD5A1ADBBAEB005A56D9 /* ArtRow.swift */,
 				B2DD332E1AD5257A002D87E0 /* NotificationController.swift */,
 				B25F2CB61AD6A4AF002731A7 /* GuideInterfaceController.swift */,
 				B2DD33301AD5257A002D87E0 /* GlanceController.swift */,
@@ -348,7 +356,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2DD33091AD52546002D87E0 /* Main.storyboard in Resources */,
-				B25273231AD550A30071F3F4 /* hero.mp3 in Resources */,
+				B2E802CB1AF27579003A46C5 /* hero.mp3 in Resources */,
+				B261C0731ADBF794008173D7 /* mona.mp3 in Resources */,
 				B2DD330E1AD52546002D87E0 /* LaunchScreen.xib in Resources */,
 				B2DD330B1AD52546002D87E0 /* Images.xcassets in Resources */,
 			);
@@ -366,7 +375,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2DD33371AD5257B002D87E0 /* museumPrototype WatchKit App.app in Resources */,
-				B25273241AD550A30071F3F4 /* hero.mp3 in Resources */,
 				B2DD33331AD5257A002D87E0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,7 +386,6 @@
 				B2DD333F1AD5257B002D87E0 /* Interface.storyboard in Resources */,
 				B298FF7C1AD6B887008F58DC /* Images.xcassets in Resources */,
 				B2DD33411AD5257B002D87E0 /* Images.xcassets in Resources */,
-				B25273251AD550A30071F3F4 /* hero.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B256CD581ADBB615005A56D9 /* ArtObject.swift in Sources */,
 				B25F2CB41AD69478002731A7 /* SwiftyJSON.swift in Sources */,
 				B2DD33061AD52546002D87E0 /* ViewController.swift in Sources */,
 				B2DD33041AD52546002D87E0 /* AppDelegate.swift in Sources */,
@@ -410,7 +418,9 @@
 				B25F2CB71AD6A4AF002731A7 /* GuideInterfaceController.swift in Sources */,
 				B2DD332F1AD5257A002D87E0 /* NotificationController.swift in Sources */,
 				B2DD332D1AD5257A002D87E0 /* InterfaceController.swift in Sources */,
+				B256CD5B1ADBBAEB005A56D9 /* ArtRow.swift in Sources */,
 				B2DD33311AD5257A002D87E0 /* GlanceController.swift in Sources */,
+				B256CD591ADBB743005A56D9 /* ArtObject.swift in Sources */,
 				B25F2CB51AD69478002731A7 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
