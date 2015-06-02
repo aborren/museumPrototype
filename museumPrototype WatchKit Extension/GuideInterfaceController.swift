@@ -52,7 +52,7 @@ class GuideInterfaceController: WKInterfaceController {
     }
     
     func initSong(){
-        WKInterfaceController.openParentApplication(["mode":"initSong"], reply: { (reply, error) -> Void in
+        WKInterfaceController.openParentApplication(["mode":"initSong", "song":self.art.audioGuide!], reply: { (reply, error) -> Void in
             println(reply)
         })
         self.hasInitiatedSong = true

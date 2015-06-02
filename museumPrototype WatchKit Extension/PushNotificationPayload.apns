@@ -1,7 +1,7 @@
 {
     "aps": {
         "alert": {
-            "body": "Test message",
+            "body": "monalisa",
             "title": "Mona Lisa"
         },
         "category": "myCategory"
@@ -10,7 +10,7 @@
     "WatchKit Simulator Actions": [
         {
             "title": "Audio Guide",
-            "identifier": "firstButtonAction"
+            "identifier": "play"
         }
     ],
     

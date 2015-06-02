@@ -38,8 +38,9 @@ class NotificationController: WKUserNotificationInterfaceController {
         //
         // After populating your dynamic notification interface call the completion block.
         let notification = JSON(localNotification)
-        let title: String = localNotification.alertBody!//notification["aps"]["alert"]["title"].description
-        self.setArtBackground("monalisa.jpeg")
+        let body: String = localNotification.alertBody!//notification["aps"]["alert"]["title"].description
+        let title: String = localNotification.alertTitle!
+        self.setArtBackground(body)
         self.setArtTitle(title)
         completionHandler(.Custom)
     }
@@ -54,7 +55,8 @@ class NotificationController: WKUserNotificationInterfaceController {
         
         println(notification["aps"]["alert"]["title"])
         let title: String = notification["aps"]["alert"]["title"].description
-        self.setArtBackground("monalisa.jpeg")
+        let body: String = notification["aps"]["alert"]["body"].description
+        self.setArtBackground(body)
         self.setArtTitle(title)
         completionHandler(.Custom)
     }

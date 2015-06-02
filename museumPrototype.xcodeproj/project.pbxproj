@@ -13,8 +13,10 @@
 		B25F2CB41AD69478002731A7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F2CB31AD69478002731A7 /* SwiftyJSON.swift */; };
 		B25F2CB51AD69478002731A7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F2CB31AD69478002731A7 /* SwiftyJSON.swift */; };
 		B25F2CB71AD6A4AF002731A7 /* GuideInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F2CB61AD6A4AF002731A7 /* GuideInterfaceController.swift */; };
-		B261C0731ADBF794008173D7 /* mona.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B261C0721ADBF794008173D7 /* mona.mp3 */; };
+		B273D7A11AF7A13500F5F74E /* pearlearing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B273D7A01AF7A13500F5F74E /* pearlearing.mp3 */; };
 		B298FF7C1AD6B887008F58DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DD33321AD5257A002D87E0 /* Images.xcassets */; };
+		B29BD2821AF77E42004AE252 /* whistlersmother.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B29BD2811AF77E42004AE252 /* whistlersmother.mp3 */; };
+		B29BD2841AF77E7E004AE252 /* monalisa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B29BD2831AF77E7E004AE252 /* monalisa.mp3 */; };
 		B2DD33041AD52546002D87E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DD33031AD52546002D87E0 /* AppDelegate.swift */; };
 		B2DD33061AD52546002D87E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DD33051AD52546002D87E0 /* ViewController.swift */; };
 		B2DD33091AD52546002D87E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DD33071AD52546002D87E0 /* Main.storyboard */; };
@@ -76,7 +78,9 @@
 		B25F2CB21AD69478002731A7 /* museumPrototype WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "museumPrototype WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
 		B25F2CB31AD69478002731A7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		B25F2CB61AD6A4AF002731A7 /* GuideInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideInterfaceController.swift; sourceTree = "<group>"; };
-		B261C0721ADBF794008173D7 /* mona.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mona.mp3; path = museumPrototype/mona.mp3; sourceTree = SOURCE_ROOT; };
+		B273D7A01AF7A13500F5F74E /* pearlearing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pearlearing.mp3; sourceTree = "<group>"; };
+		B29BD2811AF77E42004AE252 /* whistlersmother.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistlersmother.mp3; sourceTree = "<group>"; };
+		B29BD2831AF77E7E004AE252 /* monalisa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monalisa.mp3; sourceTree = "<group>"; };
 		B2DD32FE1AD52546002D87E0 /* museumPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = museumPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DD33021AD52546002D87E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2DD33031AD52546002D87E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,7 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				B25F2CB31AD69478002731A7 /* SwiftyJSON.swift */,
-				B261C0721ADBF794008173D7 /* mona.mp3 */,
+				B29BD2811AF77E42004AE252 /* whistlersmother.mp3 */,
+				B29BD2831AF77E7E004AE252 /* monalisa.mp3 */,
+				B273D7A01AF7A13500F5F74E /* pearlearing.mp3 */,
 				B2E802CA1AF27579003A46C5 /* hero.mp3 */,
 				B256CD571ADBB615005A56D9 /* ArtObject.swift */,
 				B2DD33031AD52546002D87E0 /* AppDelegate.swift */,
@@ -355,9 +361,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29BD2841AF77E7E004AE252 /* monalisa.mp3 in Resources */,
 				B2DD33091AD52546002D87E0 /* Main.storyboard in Resources */,
+				B29BD2821AF77E42004AE252 /* whistlersmother.mp3 in Resources */,
+				B273D7A11AF7A13500F5F74E /* pearlearing.mp3 in Resources */,
 				B2E802CB1AF27579003A46C5 /* hero.mp3 in Resources */,
-				B261C0731ADBF794008173D7 /* mona.mp3 in Resources */,
 				B2DD330E1AD52546002D87E0 /* LaunchScreen.xib in Resources */,
 				B2DD330B1AD52546002D87E0 /* Images.xcassets in Resources */,
 			);

@@ -125,43 +125,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             let closestBeacon = knownBeacons[0] as! CLBeacon
             for beacon in knownBeacons {
                 if(beacon.minor == 123){
-                    if(beacon.proximity.rawValue == 1){
-                        if(!self.hasTriggerediPhone){
-                            self.hasTriggerediPhone = true
-                            self.triggerNotification("Mona Lisa")
-                        }
+                    if(!self.hasTriggerediPhone){
+                        self.hasTriggerediPhone = true
+                        self.triggerNotification("monalisa", title: "Mona Lisa")
                     }
                     println("iPhone \(beacon.accuracy) \(beacon.proximity.rawValue)")
                 }
                 else if(beacon.minor == 234){
-                    if(beacon.proximity.rawValue == 1){
-                        self.triggerNotification("pad")
+                    if(!self.hasTriggerediPad){
+                        self.hasTriggerediPad = true
+                        self.triggerNotification("whistlersmother", title: "Whistler's Mother")
                     }
                     println("iPad \(beacon.accuracy) \(beacon.proximity.rawValue)")
                 }
             }
             
-        }
+        }   
     }
     
     func locationManager(manager: CLLocationManager!, didEnterRegion region: CLRegion!) {
         println("hi")
-        self.triggerNotification("Entered region")
+        //self.triggerNotification("Entered region")
     }
     
     func locationManager(manager: CLLocationManager!, didExitRegion region: CLRegion!) {
         println("bye")
-        self.triggerNotification("Left region")
+        //self.triggerNotification("Left region")
     }
     
     func locationManager(manager: CLLocationManager!, didStartMonitoringForRegion region: CLRegion!) {
         println("funkar detta?")
     }
     
-    func triggerNotification(text: String){
+    func triggerNotification(body: String, title: String){
         var notification:UILocalNotification = UILocalNotification()
-        notification.alertTitle = "Nära"
-        notification.alertBody = text
+        notification.alertTitle = title
+        notification.alertBody = body
         notification.soundName = UILocalNotificationDefaultSoundName
         notification.fireDate = NSDate(timeIntervalSinceNow: 1)
         notification.applicationIconBadgeNumber = 1
@@ -213,7 +212,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                 self.audioPlayer.pause()
                 reply(["reply":"pause"])
             }else if(mode == "initSong"){
-                self.initSong("hero") //with arg!
+                //whistlersmother
+                //pearlearing
+                if let song = info["song"].string{
+                    self.initSong(song)
+                }else {
+                    self.initSong("monalisa") //with arg!
+                }
                 reply(["reply":"init"])
             }
         }
@@ -232,7 +237,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         var soundFilePath = NSBundle.mainBundle().pathForResource(song, ofType: "mp3")
         var fileURL = NSURL(string: soundFilePath!)
         self.audioPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
-        self.audioPlayer.numberOfLoops = 1
+        self.audioPlayer.numberOfLoops = 0
         
     }
 }

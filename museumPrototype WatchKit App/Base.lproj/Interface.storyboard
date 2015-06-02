@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
@@ -17,16 +17,6 @@
                                         <items>
                                             <label alignment="right" verticalAlignment="bottom" text="Whistler's Mother" minimumScaleFactor="0.70000000000000007" id="Ui9-gl-FJM"/>
                                         </items>
-                                        <variation key="default">
-                                            <mask key="items">
-                                                <exclude reference="Ui9-gl-FJM"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="device=watch38mm">
-                                            <mask key="items">
-                                                <include reference="Ui9-gl-FJM"/>
-                                            </mask>
-                                        </variation>
                                         <connections>
                                             <segue destination="TPk-zB-J9H" kind="push" id="KqV-a6-vmq"/>
                                         </connections>
@@ -39,18 +29,8 @@
                             </items>
                         </table>
                     </items>
-                    <variation key="default">
-                        <mask key="items">
-                            <exclude reference="nUm-nJ-Kmu"/>
-                        </mask>
-                    </variation>
-                    <variation key="device=watch38mm">
-                        <mask key="items">
-                            <include reference="nUm-nJ-Kmu"/>
-                        </mask>
-                    </variation>
                     <connections>
-                        <outlet property="artTable" destination="nUm-nJ-Kmu" id="d7b-BX-Nyq"/>
+                        <outlet property="artTable" destination="nUm-nJ-Kmu" id="OLr-4q-aoY"/>
                     </connections>
                 </controller>
             </objects>
@@ -97,49 +77,13 @@
                                         </label>
                                     </items>
                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <variation key="default">
-                                        <mask key="items">
-                                            <exclude reference="iK8-Og-TFg"/>
-                                            <exclude reference="wVo-FG-6s1"/>
-                                            <exclude reference="Ghy-m2-wnY"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="device=watch38mm">
-                                        <mask key="items">
-                                            <include reference="iK8-Og-TFg"/>
-                                            <include reference="wVo-FG-6s1"/>
-                                            <include reference="Ghy-m2-wnY"/>
-                                        </mask>
-                                    </variation>
                                 </group>
                                 <label alignment="left" numberOfLines="0" minimumScaleFactor="0.70000000000000007" id="asA-Ws-Yfz">
                                     <string key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</string>
                                 </label>
                             </items>
-                            <variation key="default">
-                                <mask key="items">
-                                    <exclude reference="1SD-dW-r3N"/>
-                                    <exclude reference="asA-Ws-Yfz"/>
-                                </mask>
-                            </variation>
-                            <variation key="device=watch38mm">
-                                <mask key="items">
-                                    <include reference="1SD-dW-r3N"/>
-                                    <include reference="asA-Ws-Yfz"/>
-                                </mask>
-                            </variation>
                         </group>
                     </items>
-                    <variation key="default">
-                        <mask key="items">
-                            <exclude reference="qh9-c7-1rq"/>
-                        </mask>
-                    </variation>
-                    <variation key="device=watch38mm">
-                        <mask key="items">
-                            <include reference="qh9-c7-1rq"/>
-                        </mask>
-                    </variation>
                     <connections>
                         <outlet property="artTitle" destination="iK8-Og-TFg" id="GBF-Tq-1Nb"/>
                         <outlet property="backgroundArtGroup" destination="0Ip-Qm-6Jz" id="TLP-PX-3ac"/>
@@ -150,7 +94,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="452" y="351"/>
+            <point key="canvasLocation" x="323" y="334"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -200,28 +144,9 @@
                                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                         </label>
                                     </items>
-                                    <variation key="default">
-                                        <mask key="items">
-                                            <exclude reference="Zyy-Bq-JHV"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="device=watch38mm">
-                                        <mask key="items">
-                                            <include reference="Zyy-Bq-JHV"/>
-                                        </mask>
-                                    </variation>
                                 </group>
                             </items>
-                            <variation key="default">
-                                <mask key="items">
-                                    <exclude reference="kIf-Ep-CA0"/>
-                                </mask>
-                            </variation>
-                            <variation key="device=watch38mm" height="82">
-                                <mask key="items">
-                                    <include reference="kIf-Ep-CA0"/>
-                                </mask>
-                            </variation>
+                            <variation key="device=watch38mm" height="82"/>
                             <variation key="device=watch42mm" height="99"/>
                         </group>
                     </items>
